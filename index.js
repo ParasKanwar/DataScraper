@@ -55,7 +55,24 @@ if (args.directory_path)
                 vehicleType,
                 rateType
               );
-            totalSuccess++;
+            if (result) {
+              const directoryPath = path.join(__dirname, args.directory_path, `${vehicleType}_${rateType}`);
+              if (fs.existsSync(directoryPath)) {
+                fs.writeFileSync(
+                  path.join(directoryPath, `./${i}_${j}_${vehicleType}_${rateType}.json`),
+                  JSON.stringify(result),
+                  { encoding: "utf-8" }
+                );
+              } else {
+                fs.mkdirSync(directoryPath);
+                fs.writeFileSync(
+                  path.join(directoryPath, `./${i}_${j}_${vehicleType}_${rateType}.json`),
+                  JSON.stringify(result),
+                  { encoding: "utf-8" }
+                );
+              }
+              totalSuccess++;
+            }
           } catch (e) {
             err_count++;
           }
@@ -64,6 +81,11 @@ if (args.directory_path)
     }
   }
 
+try {
+  fs.writeFileSync(path.join(__dirname, "./logs.json"), JSON.stringify({ err_count, totalSuccess }));
+} catch (e) {
+  console.log(e.message);
+}
 if (args.from && args.to && args.vehicle_type && args.rate_type) {
   const route_details_to_feed_into_algorithm = RouteGenerator.generateRoute(map_data_for_specific_date, args.from, args.to);
   const val = tollCalculator.calculate(
