@@ -1,0 +1,28 @@
+module.exports.NativeRateType = [
+  "wd_0600_0700",
+  "wd_0700_0930",
+  "wd_0930_1000",
+  "wd_1000_1030",
+  "wd_1030_1430",
+  "wd_1430_1500",
+  "wd_1500_1530",
+  "wd_1530_1800",
+  "wd_1800_1900",
+  "wd_1900_0600",
+  "nh_1100_1900",
+  "nh_1900_1100",
+];
+module.exports.NativeToCustomType = {
+  wd_0600_0700: "Weekday 6am - 7am",
+  wd_0700_0930: "Weekday 7am - 9:30am",
+  wd_0930_1000: "Weekday 9:30am - 10am",
+  wd_1000_1030: "Weekday 10am - 10:30am",
+  wd_1030_1430: "Weekday 10:30am - 2:30pm",
+  wd_1430_1500: "Weekday 2:30pm - 3:00pm",
+  wd_1500_1530: "Weekday 3:00pm - 3:30pm",
+  wd_1530_1800: "Weekday 3:30pm - 6pm",
+  wd_1800_1900: "Weekday 6pm - 7pm",
+  wd_1900_0600: "Weekday 7pm - 6am",
+  nh_1100_1900: "Wknds/Holiday 11am - 7pm",
+  nh_1900_1100: "Wknds/Holiday 7pm - 11am",
+};

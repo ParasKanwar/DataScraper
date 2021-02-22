@@ -21,29 +21,19 @@ const { RouteGenerator } = require("./utils/RouteGenerator");
 RouteGenerator.init(mapData[date_for_map_data], zoneData);
 const map_data_for_specific_date = RouteGenerator.generateMapData(testData.date);
 const tollCalculator = new TollCalculator(rateData, zoneData);
-const total_locations = Object.keys(mapData[date_for_map_data].locations).length;
-const vehicleTypes = ["multi", "light", "heavy"];
-const rateTypes = [
-  "wd_0600_0700",
-  "wd_0700_0930",
-  "wd_0930_1000",
-  "wd_1000_1030",
-  "wd_1030_1430",
-  "wd_1430_1500",
-  "wd_1500_1530",
-  "wd_1530_1800",
-  "wd_1800_1900",
-  "wd_1900_0600",
-  "nh_1100_1900",
-  "nh_1900_1100",
-];
+const locationObj = mapData[date_for_map_data].locations;
+const total_locations = Object.keys(locationObj).length;
+const { NativeVehicleTypes, NativeTypesToCustom } = require("./constants/vehicalTypes");
+const { NativeRateType, NativeToCustomType: NativeToCustomRateType } = require("./constants/rateTypes");
 let totalSuccess = 0;
 let err_count = 0;
-if (args.directory_path)
+const toSave_Path = path.join(__dirname, "./output.csv");
+if (args.directory_path) {
+  fs.writeFileSync(toSave_Path, "entrance,exit,time_of_day,vehicle_class,toll_type,toll_rate\n");
   for (let i = 1; i <= total_locations; i++) {
     for (let j = 1; j <= total_locations; j++) {
-      for (let vehicleType of vehicleTypes) {
-        for (let rateType of rateTypes) {
+      for (let vehicleType of NativeVehicleTypes) {
+        for (let rateType of NativeRateType) {
           try {
             const route_details_to_feed_into_algorithm = RouteGenerator.generateRoute(map_data_for_specific_date, i, j);
             const result =
@@ -56,21 +46,24 @@ if (args.directory_path)
                 rateType
               );
             if (result) {
-              const directoryPath = path.join(__dirname, args.directory_path, `${vehicleType}_${rateType}`);
-              if (fs.existsSync(directoryPath)) {
-                fs.writeFileSync(
-                  path.join(directoryPath, `./${i}_${j}_${vehicleType}_${rateType}.json`),
-                  JSON.stringify(result),
-                  { encoding: "utf-8" }
-                );
-              } else {
-                fs.mkdirSync(directoryPath);
-                fs.writeFileSync(
-                  path.join(directoryPath, `./${i}_${j}_${vehicleType}_${rateType}.json`),
-                  JSON.stringify(result),
-                  { encoding: "utf-8" }
-                );
-              }
+              fs.appendFileSync(
+                toSave_Path,
+                `${locationObj[i].name},${locationObj[j].name},${NativeToCustomRateType[rateType]},${
+                  NativeTypesToCustom[vehicleType]
+                },${"Without - Total"},${result.totalAmount[0]}\n`,
+                {
+                  encoding: "utf-8",
+                }
+              );
+              fs.appendFileSync(
+                toSave_Path,
+                `${locationObj[i].name},${locationObj[j].name},${NativeToCustomRateType[rateType]},${
+                  NativeTypesToCustom[vehicleType]
+                },${"With a Transponder - Total"},${result.totalAmount[1]}\n`,
+                {
+                  encoding: "utf-8",
+                }
+              );
               totalSuccess++;
             }
           } catch (e) {
@@ -80,6 +73,7 @@ if (args.directory_path)
       }
     }
   }
+}
 
 try {
   fs.writeFileSync(path.join(__dirname, "./logs.json"), JSON.stringify({ err_count, totalSuccess }));
@@ -97,3 +91,19 @@ if (args.from && args.to && args.vehicle_type && args.rate_type) {
   );
   console.log(val);
 }
+
+// const directoryPath = path.join(__dirname, args.directory_path, `${vehicleType}_${rateType}`);
+// if (fs.existsSync(directoryPath)) {
+//   fs.writeFileSync(
+//     path.join(directoryPath, `./${i}_${j}_${vehicleType}_${rateType}.json`),
+//     JSON.stringify(result),
+//     { encoding: "utf-8" }
+//   );
+// } else {
+//   fs.mkdirSync(directoryPath);
+//   fs.writeFileSync(
+//     path.join(directoryPath, `./${i}_${j}_${vehicleType}_${rateType}.json`),
+//     JSON.stringify(result),
+//     { encoding: "utf-8" }
+//   );
+// }
