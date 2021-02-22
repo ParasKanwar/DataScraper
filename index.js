@@ -30,12 +30,16 @@ let err_count = 0;
 const toSave_Path = path.join(__dirname, "./output.csv");
 if (args.directory_path) {
   fs.writeFileSync(toSave_Path, "entrance,exit,time_of_day,vehicle_class,toll_type,toll_rate\n");
-  for (let i = 1; i <= total_locations; i++) {
-    for (let j = 1; j <= total_locations; j++) {
+  for (let i in locationObj) {
+    for (let j in locationObj) {
       for (let vehicleType of NativeVehicleTypes) {
         for (let rateType of NativeRateType) {
           try {
-            const route_details_to_feed_into_algorithm = RouteGenerator.generateRoute(map_data_for_specific_date, i, j);
+            const route_details_to_feed_into_algorithm = RouteGenerator.generateRoute(
+              map_data_for_specific_date,
+              parseInt(i),
+              parseInt(j)
+            );
             const result =
               j !== i &&
               tollCalculator.calculate(
@@ -67,6 +71,8 @@ if (args.directory_path) {
               totalSuccess++;
             }
           } catch (e) {
+            console.log(e.message);
+            console.log("--------------------------------------------------");
             err_count++;
           }
         }
