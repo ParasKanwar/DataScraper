@@ -1,0 +1,641 @@
+{
+  "2020-02-Spring": {
+    "zone1": {
+      "name": "Zone 1",
+      "affiliation": "407",
+      "zone_rate": "zone1",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 10]]
+    },
+    "zone2": {
+      "name": "Zone 2",
+      "affiliation": "407",
+      "zone_rate": "zone2",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[10, 19]]
+    },
+    "zone3": {
+      "name": "Zone 3",
+      "affiliation": "407",
+      "zone_rate": "zone3",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[19, 33]]
+    },
+    "zone4": {
+      "name": "Zone 4",
+      "affiliation": "407",
+      "zone_rate": "zone4",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[33, 44]]
+    },
+    "east407": {
+      "name": "MTO",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy407.png",
+      "zones": [
+        [44, 48],
+        [48, 58],
+        [58, 60],
+        [60, 66]
+      ]
+    },
+    "east412": {
+      "name": "Highway 412",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy412.png",
+      "zones": [[48, 53]]
+    },
+    "east418": {
+      "name": "Highway 418",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy418.png",
+      "zones": [[60, 63]]
+    }
+  },
+  "2019-06": {
+    "zone1": {
+      "name": "Zone 1",
+      "affiliation": "407",
+      "zone_rate": "zone1",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 10]]
+    },
+    "zone2": {
+      "name": "Zone 2",
+      "affiliation": "407",
+      "zone_rate": "zone2",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[10, 19]]
+    },
+    "zone3": {
+      "name": "Zone 3",
+      "affiliation": "407",
+      "zone_rate": "zone3",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[19, 33]]
+    },
+    "zone4": {
+      "name": "Zone 4",
+      "affiliation": "407",
+      "zone_rate": "zone4",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[33, 44]]
+    },
+    "east407": {
+      "name": "MTO",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy407.png",
+      "zones": [
+        [44, 48],
+        [48, 58],
+        [58, 60],
+        [60, 66]
+      ]
+    },
+    "east412": {
+      "name": "Highway 412",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy412.png",
+      "zones": [[48, 53]]
+    },
+    "east418": {
+      "name": "Highway 418",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy418.png",
+      "zones": [[60, 63]]
+    }
+  },
+  "2019-02": {
+    "zone1": {
+      "name": "Zone 1",
+      "affiliation": "407",
+      "zone_rate": "zone1",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 10]]
+    },
+    "zone2": {
+      "name": "Zone 2",
+      "affiliation": "407",
+      "zone_rate": "zone2",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[10, 19]]
+    },
+    "zone3": {
+      "name": "Zone 3",
+      "affiliation": "407",
+      "zone_rate": "zone3",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[19, 33]]
+    },
+    "zone4": {
+      "name": "Zone 4",
+      "affiliation": "407",
+      "zone_rate": "zone4",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[33, 44]]
+    },
+    "east407": {
+      "name": "MTO",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy407.png",
+      "zones": [
+        [44, 48],
+        [48, 58],
+        [58, 60],
+        [60, 66]
+      ]
+    },
+    "east412": {
+      "name": "Highway 412",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy412.png",
+      "zones": [[48, 53]]
+    },
+    "east418": {
+      "name": "Highway 418",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy418.png",
+      "zones": [[60, 63]]
+    }
+  },
+  "2018-02": {
+    "zone1": {
+      "name": "Zone 1",
+      "affiliation": "407",
+      "zone_rate": "zone1",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 10]]
+    },
+    "zone2": {
+      "name": "Zone 2",
+      "affiliation": "407",
+      "zone_rate": "zone2",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[10, 19]]
+    },
+    "zone3": {
+      "name": "Zone 3",
+      "affiliation": "407",
+      "zone_rate": "zone3",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[19, 33]]
+    },
+    "zone4": {
+      "name": "Zone 4",
+      "affiliation": "407",
+      "zone_rate": "zone4",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[33, 44]]
+    },
+    "east407": {
+      "name": "MTO",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy407.png",
+      "zones": [
+        [44, 48],
+        [48, 58],
+        [58, 60],
+        [60, 66]
+      ]
+    },
+    "east412": {
+      "name": "Highway 412",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy412.png",
+      "zones": [[48, 53]]
+    },
+    "east418": {
+      "name": "Highway 418",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy418.png",
+      "zones": [[60, 63]]
+    }
+  },
+  "2017-02": {
+    "zone1": {
+      "name": "Zone 1",
+      "affiliation": "407",
+      "zone_rate": "zone1",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 10]]
+    },
+    "zone2": {
+      "name": "Zone 2",
+      "affiliation": "407",
+      "zone_rate": "zone2",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[10, 33]]
+    },
+    "zone3": {
+      "name": "Zone 3",
+      "affiliation": "407",
+      "zone_rate": "zone3",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[33, 44]]
+    },
+    "east407": {
+      "name": "MTO",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy407.png",
+      "zones": [
+        [44, 48],
+        [48, 58],
+        [58, 60],
+        [60, 66]
+      ]
+    },
+    "east412": {
+      "name": "Highway 412",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy412.png",
+      "zones": [[48, 53]]
+    },
+    "east418": {
+      "name": "Highway 418",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy418.png",
+      "zones": [[60, 63]]
+    }
+  },
+  "2016-01": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [
+        [1, 10],
+        [19, 33]
+      ]
+    },
+    "light": {
+      "name": "Light",
+      "affiliation": "407",
+      "zone_rate": "lightzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [
+        [10, 19],
+        [33, 44]
+      ]
+    },
+    "east407": {
+      "name": "MTO",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy407.png",
+      "zones": [
+        [44, 48],
+        [48, 58],
+        [58, 60],
+        [60, 66]
+      ]
+    },
+    "east412": {
+      "name": "Highway 412",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy412.png",
+      "zones": [[48, 53]]
+    },
+    "east418": {
+      "name": "Highway 418",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy418.png",
+      "zones": [[60, 63]]
+    }
+  },
+  "2016-02": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [
+        [1, 10],
+        [19, 33]
+      ]
+    },
+    "light": {
+      "name": "Light",
+      "affiliation": "407",
+      "zone_rate": "lightzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [
+        [10, 19],
+        [33, 44]
+      ]
+    },
+    "east407": {
+      "name": "MTO",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy407.png",
+      "zones": [
+        [44, 48],
+        [48, 58],
+        [58, 60],
+        [60, 66]
+      ]
+    },
+    "east412": {
+      "name": "Highway 412",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy412.png",
+      "zones": [[48, 53]]
+    },
+    "east418": {
+      "name": "Highway 418",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy418.png",
+      "zones": [[60, 63]]
+    }
+  },
+  "2015-02": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [
+        [1, 14],
+        [19, 44]
+      ]
+    },
+    "light": {
+      "name": "Light",
+      "affiliation": "407",
+      "zone_rate": "lightzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[14, 19]]
+    },
+    "east407": {
+      "name": "MTO",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy407.png",
+      "zones": [
+        [44, 48],
+        [48, 58],
+        [58, 60],
+        [60, 66]
+      ]
+    },
+    "east412": {
+      "name": "Highway 412",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy412.png",
+      "zones": [[48, 53]]
+    },
+    "east418": {
+      "name": "Highway 418",
+      "affiliation": "MTO",
+      "zone_rate": "eastzone",
+      "image": "/assets/ver20210211171654/images/logo/hwy418.png",
+      "zones": [[60, 63]]
+    }
+  },
+  "2014-02": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [
+        [1, 14],
+        [19, 44]
+      ]
+    },
+    "light": {
+      "name": "Light",
+      "affiliation": "407",
+      "zone_rate": "lightzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[14, 19]]
+    }
+  },
+  "2013-02": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [
+        [1, 14],
+        [19, 44]
+      ]
+    },
+    "light": {
+      "name": "Light",
+      "affiliation": "407",
+      "zone_rate": "lightzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[14, 19]]
+    }
+  },
+  "2012-02": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[7, 44]]
+    },
+    "light": {
+      "name": "Light",
+      "affiliation": "407",
+      "zone_rate": "lightzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 7]]
+    }
+  },
+  "2011-02": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [
+        [1, 7],
+        [10, 24],
+        [33, 44]
+      ]
+    },
+    "light": {
+      "name": "Light",
+      "affiliation": "407",
+      "zone_rate": "lightzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [
+        [7, 10],
+        [24, 33]
+      ]
+    }
+  },
+  "2010-02": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [
+        [1, 14],
+        [19, 24],
+        [38, 44]
+      ]
+    },
+    "light": {
+      "name": "Light",
+      "affiliation": "407",
+      "zone_rate": "lightzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [
+        [14, 19],
+        [24, 38]
+      ]
+    }
+  },
+  "2009-02": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 24]]
+    },
+    "light": {
+      "name": "Light",
+      "affiliation": "407",
+      "zone_rate": "lightzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[24, 44]]
+    }
+  },
+  "2008-02": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[10, 33]]
+    },
+    "light": {
+      "name": "Light",
+      "affiliation": "407",
+      "zone_rate": "lightzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [
+        [1, 10],
+        [33, 44]
+      ]
+    }
+  },
+  "2007-02": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 44]]
+    }
+  },
+  "2006-02": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 44]]
+    }
+  },
+  "2005-02": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 44]]
+    }
+  },
+  "2004-02": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 44]]
+    }
+  },
+  "2003-02": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 44]]
+    }
+  },
+  "2002-01": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 44]]
+    }
+  },
+  "2001-01": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 44]]
+    }
+  },
+  "2000-05": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 44]]
+    }
+  },
+  "1999-09": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 44]]
+    }
+  },
+  "1999-05": {
+    "regular": {
+      "name": "Regular",
+      "affiliation": "407",
+      "zone_rate": "regularzone",
+      "image": "/assets/ver20210211171654/images/logo/407etr.png",
+      "zones": [[1, 44]]
+    }
+  }
+}
