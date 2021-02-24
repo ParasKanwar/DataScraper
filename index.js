@@ -54,7 +54,7 @@ if (args.directory_path) {
                 toSave_Path,
                 `${locationObj[i].name},${locationObj[j].name},${NativeToCustomRateType[rateType]},${
                   NativeTypesToCustom[vehicleType]
-                },${"Without - Total"},${result.totalAmount[0]}\n`,
+                },${"Without - Total"},${result.totalAmount[1]}\n`,      // changed by pavelc@mapup.ai
                 {
                   encoding: "utf-8",
                 }
@@ -63,7 +63,7 @@ if (args.directory_path) {
                 toSave_Path,
                 `${locationObj[i].name},${locationObj[j].name},${NativeToCustomRateType[rateType]},${
                   NativeTypesToCustom[vehicleType]
-                },${"With a Transponder - Total"},${result.totalAmount[1]}\n`,
+                },${"With a Transponder - Total"},${result.totalAmount[0]}\n`,   // changed by pavelc@mapup.ai
                 {
                   encoding: "utf-8",
                 }
