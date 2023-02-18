@@ -21,12 +21,11 @@ module.exports.RouteGenerator = (function () {
     var cloneZone = JSON.parse(JSON.stringify(fullZoneData));
     var locations = {};
     cloneMap = _filterLocations(cloneMap, targetDate);
-    cloneZone = cloneZone[targetDate];
+    cloneZone = cloneZone.zones[targetDate];
     cloneMap.gmapsPolyfillStyles = [];
     if (!isEmpty(cloneMap.locations) || !isEmpty(cloneZone)) {
       locations = _constructTree(1, cloneMap, cloneZone);
     }
-
     cloneMap.locations = locations;
     return cloneMap;
   }

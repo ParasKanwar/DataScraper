@@ -18,6 +18,7 @@ const args = commandLineArgs(options);
 console.log(args);
 const { RouteGenerator } = require("./utils/RouteGenerator");
 // inititalizing route generator with appropriate map data
+// console.log(zoneData);
 RouteGenerator.init(mapData[date_for_map_data], zoneData);
 const map_data_for_specific_date = RouteGenerator.generateMapData(testData.date);
 const tollCalculator = new TollCalculator(rateData, zoneData);
@@ -40,6 +41,7 @@ if (args.directory_path) {
               parseInt(i),
               parseInt(j)
             );
+            // console.log(route_details_to_feed_into_algorithm);
             const result =
               j !== i &&
               tollCalculator.calculate(
@@ -71,6 +73,8 @@ if (args.directory_path) {
               totalSuccess++;
             }
           } catch (e) {
+            console.log(i, j, vehicleType, rateType);
+            throw new Error('cant')
             console.log(e.message);
             console.log("--------------------------------------------------");
             err_count++;

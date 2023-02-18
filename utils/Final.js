@@ -6,8 +6,8 @@ module.exports = class TollCalculator {
     this.zoneData = zoneDataInit;
   }
   calculate(date, map, routeObj, vehicleType, rateType) {
-    var rates = this.rateData[date];
-    var zones = this.zoneData[date];
+    var rates = this.rateData.rates[date];
+    var zones = this.zoneData.zones[date];
     var locations = map.locations;
     var affiliationsArray = [];
     var route = routeObj.routePaths;

@@ -1,5 +1,5 @@
 {
-  "date": "2020-02-Spring",
+  "date": "2022-06-Summer",
   "map": {
     "location_types": { "full": 0, "partial": 1, "planned": 2, "routing": 3, "deferred": 4, "tempuse": 5, "futurerouting": 6 },
     "affiliation_map": {
